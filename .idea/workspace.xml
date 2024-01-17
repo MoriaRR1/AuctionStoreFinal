@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35e82e47-3287-4cb6-87e1-5ebec2349b62" name="Changes" comment="Edytowany html i dark light mode dzialajacy jakos" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="maciek" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MoriaRR1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6bed8244-91f3-4cbc-bda2-b3ea432b5117" />
+        <option name="url" value="https://github.com/MoriaRR1/SklepProba.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Z8OZJYC9Bqc9wbHf3tL4WEWVst" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to process.pid 39260.executor": "ProcessAttachDebug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.error-500.html.executor": "Run",
+    "Maven.OnlineShop [org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean].executor": "Run",
+    "Maven.OnlineShop [org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file].executor": "Run",
+    "Maven.OnlineShop [org.apache.maven.plugins:maven-install-plugin:2.5.2:install].executor": "Run",
+    "Maven.OnlineShop [org.flywaydb:flyway-maven-plugin:6.5.2:clean].executor": "Run",
+    "Maven.OnlineShop [org.flywaydb:flyway-maven-plugin:6.5.2:info].executor": "Run",
+    "Maven.OnlineShop [org.flywaydb:flyway-maven-plugin:6.5.2:migrate].executor": "Run",
+    "Maven.OnlineShop [org.springframework.boot:spring-boot-maven-plugin:2.3.6.RELEASE:build-info].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.EcommerceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Hubert/Downloads/AuctionStore-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="Branch-1-Hubert" />
+    </force-push-targets>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hubert\Desktop\PROJEKT NEW\src\main\resources\uploads" />
+      <recent name="C:\Users\macie\OneDrive\!Studia\Java\SklepProba\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="error-500.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SklepProba/src/main/resources/templates/error-500.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OnlineShop-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OnlineShop-master" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcommerceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="OnlineShop (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gmail.merikbest2015.ecommerce.EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gmail.merikbest2015.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-semeru-1.8.0_402-f644763e9732-cd8dfe1b" />
+        <option value="jdk-19.0.2-corretto-19.0.2-f644763e9732-1e16d6ec" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35e82e47-3287-4cb6-87e1-5ebec2349b62" name="Changes" comment="" />
+      <created>1701800294096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701800294096</updated>
+      <workItem from="1704655740978" duration="57000" />
+      <workItem from="1704655869078" duration="5233000" />
+      <workItem from="1705256412635" duration="4908000" />
+    </task>
+    <task id="LOCAL-00001" summary="suicide">
+      <option name="closed" value="true" />
+      <created>1704831385487</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704831385487</updated>
+    </task>
+    <task id="LOCAL-00002" summary="suicide">
+      <option name="closed" value="true" />
+      <created>1704831412330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704831412330</updated>
+    </task>
+    <task id="LOCAL-00003" summary="nawet działa lol">
+      <option name="closed" value="true" />
+      <created>1704839066014</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704839066014</updated>
+    </task>
+    <task id="LOCAL-00004" summary="nawet działa lol">
+      <option name="closed" value="true" />
+      <created>1704839524132</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704839524132</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Edytowany html i dark light mode dzialajacy jakos">
+      <option name="closed" value="true" />
+      <created>1705270654155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705270654155</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Edytowany html i dark light mode dzialajacy jakos">
+      <option name="closed" value="true" />
+      <created>1705436430891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705436430891</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Edytowany html i dark light mode dzialajacy jakos">
+      <option name="closed" value="true" />
+      <created>1705436439187</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705436439187</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Edytowany html i dark light mode dzialajacy jakos">
+      <option name="closed" value="true" />
+      <created>1705436448936</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705436448936</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Edytowany html i dark light mode dzialajacy jakos">
+      <option name="closed" value="true" />
+      <created>1705442065972</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705442065972</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Edytowany html i dark light mode dzialajacy jakos">
+      <option name="closed" value="true" />
+      <created>1705442071903</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705442071903</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="suicide" />
+    <MESSAGE value="nawet działa lol" />
+    <MESSAGE value="Edytowany html i dark light mode dzialajacy jakos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edytowany html i dark light mode dzialajacy jakos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.thymeleaf.exceptions.TemplateProcessingException" package="org.thymeleaf.exceptions" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

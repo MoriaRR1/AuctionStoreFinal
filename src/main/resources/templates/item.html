@@ -1,0 +1,81 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/common-fragments :: head"></head>
+<body>
+<div th:insert="~{fragments/common-fragments :: scripts}"></div>
+<div th:replace="fragments/common-fragments :: navbar"></div>
+<div id="container" class="">
+    <div class="container pt-5 pb-5 bg-white shadow-sm">
+        <div class="row">
+            <div class="col-md-5">
+                <img th:src="@{/img/{path} (path = ${item.getFilename()})}" class="rounded mx-auto w-100">
+            </div>
+            <div class="col-md-7">
+                <h2 th:text="${item.getItemTitle()}"></h2>
+                <h3 th:text="${item.getItemer()}"></h3>
+                <p>Product code: <span th:text="${item.getId()}"></span></p>
+                <p class="product-stock" style="color: #54C0A1">In Stock</p>
+                <div class="row ml-1">
+                    <h6 class="mr-5">
+                        $<span th:text="${item.getPrice()}"></span>.00
+                    </h6>
+                    <form action="/cart/add" method="post">
+                        <button type="submit" name="itemId" class="btn btn-success mx-3"
+                                th:value="${item.getId()}">
+                            <i class="fas fa-cart-plus mr-2 fa-lg"></i>
+                            ADD TO CART
+                        </button>
+                    </form>
+                </div>
+                <br>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>Item title:</td>
+                        <td th:text="${item.getItemTitle()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject:</td>
+                        <td th:text="${item.getItemer()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Item type:</td>
+                        <td th:text="${item.getType()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Year:</td>
+                        <td th:text="${item.getYear()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Quantity:</td>
+                        <td><span th:text="${item.getVolume()}"></span>.</td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td th:text="${item.getCountry()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Degree:</td>
+                        <td th:text="${item.getItemGender()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Lecturer:</td>
+                        <td th:text="${item.getItemTopNotes()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Academic year:</td>
+                        <td th:text="${item.getItemMiddleNotes()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td th:text="${item.getItemBaseNotes()}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:insert="~{fragments/common-fragments :: footer}"></footer>
+</body>
+</html>

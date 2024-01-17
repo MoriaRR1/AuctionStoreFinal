@@ -1,0 +1,122 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/common-fragments :: head"></head>
+<body>
+<div th:insert="~{fragments/common-fragments :: scripts}"></div>
+<div th:replace="fragments/common-fragments :: navbar"></div>
+<div id="container" class="">
+    <div class="py-5">
+        <div class="container py-5 shadow-sm card-height">
+            <div class="row mx-3">
+                <th:block th:replace="fragments/account-fragments :: account-sidebar"/>
+                <div class="col-md-9 mb-5">
+                    <th:block th:replace="fragments/common-fragments :: info-title(
+                        text='Add item',
+                        icon='fas fa-plus-square mr-2'
+                    )"/>
+                    <br/>
+                    <form method="post" action="/user/add/item" enctype="multipart/form-data">
+                        <div class="form row">
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='item title',
+                                name='itemTitle',
+                                placeholder='Enter the item title',
+                                value=(${item} ? ${item.itemTitle} : ''),
+                                error=(${itemTitleError})
+                            )"/>
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Subject',
+                                name='itemer',
+                                placeholder='Enter the subject',
+                                value=(${item} ? ${item.itemer} : ''),
+                                error=(${itemerError})
+                            )"/>
+                        </div>
+                        <div class="form row mt-3">
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Release year',
+                                name='year',
+                                placeholder='Enter the release year',
+                                value=(${item} ? ${item.year} : ''),
+                                error=(${yearError})
+                            )"/>
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Country',
+                                name='country',
+                                placeholder='Country',
+                                value=(${item} ? ${item.country} : ''),
+                                error=(${countryError})
+                            )"/>
+                        </div>
+                        <div class="form row mt-3">
+                            <th:block th:replace="fragments/account-fragments :: add-item-select(
+                                title='item type',
+                                name='type',
+                                options=(${ {'Notes','Books'} }),
+                                error=(${typeError})
+                            )"/>
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Volume',
+                                name='volume',
+                                placeholder='Enter the volume',
+                                value=(${item} ? ${item.volume} : ''),
+                                error=(${volumeError})
+                            )"/>
+                        </div>
+                        <div class="form row mt-3">
+                            <th:block th:replace="fragments/account-fragments :: add-item-select(
+                                title='Degree',
+                                name='itemGender',
+                                options=(${ {'Engineer', 'Bachelor'} }),
+                                error=(${itemGenderError})
+                            )"/>
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Lecturer',
+                                name='itemTopNotes',
+                                placeholder='Enter the Lecturer name',
+                                value=(${item} ? ${item.itemTopNotes} : ''),
+                                error=(${itemTopNotesError})
+                            )"/>
+                        </div>
+                        <div class="form row mt-3">
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Academic Year',
+                                name='itemMiddleNotes',
+                                placeholder='Enter the academic year',
+                                value=(${item} ? ${item.itemMiddleNotes} : ''),
+                                error=(${itemMiddleNotesError})
+                            )"/>
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Language',
+                                name='itemBaseNotes',
+                                placeholder='Enter the item language',
+                                value=(${item} ? ${item.itemBaseNotes} : ''),
+                                error=(${itemBaseNotesError})
+                            )"/>
+                        </div>
+                        <div class="form row mt-3">
+                            <th:block th:replace="fragments/account-fragments :: add-item-input(
+                                title='Price',
+                                name='price',
+                                placeholder='Enter the price',
+                                value=(${item} ? ${item.price} : ''),
+                                error=(${priceError})
+                            )"/>
+                            <div class="col" style="margin-top: 35px">
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+                        <th:block th:replace="fragments/common-fragments :: icon-button(
+                            text='Add',
+                            buttonClassName='mt-3',
+                            icon='fas fa-plus-square mr-2'
+                        )"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:insert="~{fragments/common-fragments :: footer}"></footer>
+</body>
+</html>

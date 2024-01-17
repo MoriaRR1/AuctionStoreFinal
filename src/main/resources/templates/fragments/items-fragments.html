@@ -1,0 +1,51 @@
+
+<div th:fragment="item-item (item)" class="col-lg-3 d-flex align-items-stretch" th:cache="false"
+>
+    <div th:insert="~{fragments/common-fragments :: scripts}"></div>
+    <div class="card mb-5 shadow" th:if="${item.getFilename()}">
+        <img th:src="@{/img/{path} (path = ${item.getFilename()})}" class="rounded mx-auto w-50">
+        <div class="card-body text-center">
+            <h5 th:text="${item.getItemTitle()}"></h5>
+            <h6 th:text="${item.getItemer()}"></h6>
+            <h6>$<span th:text="${item.getPrice()}"></span>.00</h6>
+        </div>
+        <div class="text-center align-items-end mb-3">
+            <a th:href="@{/item/{itemId} (itemId = ${item.getId()})}" class="btn btn-dark">
+                SHOW MORE
+            </a>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="itemer-item" class="col-2 float-left">
+    <a th:href="${'/item?itemers=' + itemer}">
+        <img class="img-fluid" th:src="${src}" alt="">
+    </a>
+</div>
+
+<div th:fragment="items-brand-checkbox(brand)" class="checkbox">
+    <label>
+        <input th:value="${brand}" type="checkbox" name="itemers" onChange="this.form.submit()"
+               th:checked="${searchRequest.getItemers() != null ? #arrays.contains(searchRequest.getItemers(), brand) : false}"/>
+        <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+        <th:block th:text="${brand}"></th:block>
+    </label>
+</div>
+
+<div th:fragment="items-gender-checkbox(gender)" class="checkbox">
+    <label>
+        <input th:value="${gender}" type="checkbox" name="genders" onChange="this.form.submit()"
+               th:checked="${searchRequest.getGenders() != null ? #arrays.contains(searchRequest.getGenders(), gender) : false}"/>
+        <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+        <th:block th:text="${#strings.capitalize(gender)}"></th:block>
+    </label>
+</div>
+
+<div th:fragment="items-price-checkbox" class="checkbox">
+    <label>
+        <input th:value="${startingPrice}" type="radio" name="price" onChange="this.form.submit()"
+               th:checked="${searchRequest.getPrice() != null ? startingPrice == searchRequest.getPrice() : false}"/>
+        <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+        <th:block th:text="${startingPrice == 0} ? 'any' : ${startingPrice} + ' - ' + ${endingPrice} + ' $'"></th:block>
+    </label>
+</div>

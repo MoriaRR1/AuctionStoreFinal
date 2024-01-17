@@ -1,0 +1,76 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/common-fragments :: head"></head>
+<body>
+<div th:insert="~{fragments/common-fragments :: scripts}"></div>
+<div th:replace="fragments/common-fragments :: navbar"></div>
+    <div class="container d-flex bg-white shadow-sm">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Auction</h3>
+            </div>
+            <form action="/item" method="get">
+                <ul class="list-unstyled components">
+                    <h5>Subject</h5>
+                    <li class="active mb-2" id="homeSubmenu">
+                        <ul class="list-unstyled">
+                            <li th:insert="fragments/items-fragments :: items-brand-checkbox('Programming')"></li>
+                            <li th:insert="fragments/items-fragments :: items-brand-checkbox('Networks')"></li>
+                            <li th:insert="fragments/items-fragments :: items-brand-checkbox('Embedded Systems')"></li>
+                            <li th:insert="fragments/items-fragments :: items-brand-checkbox('English')"></li>
+                            <li th:insert="fragments/items-fragments :: items-brand-checkbox('Exams')"></li>
+                        </ul>
+                    </li>
+                        <h5>Degree</h5>
+                    <li class="active mb-2">
+                        <ul class="list-unstyled">
+                            <li th:insert="fragments/items-fragments :: items-gender-checkbox('Engineer')"></li>
+                            <li th:insert="fragments/items-fragments :: items-gender-checkbox('Bachelor')"></li>
+                        </ul>
+                    </li>
+                    <h5>Price</h5>
+                    <li class="active mb-2">
+                        <ul class="list-unstyled">
+                            <li th:insert="fragments/items-fragments :: items-price-checkbox(startingPrice=0, endingPrice=100)"></li>
+                            <li th:insert="fragments/items-fragments :: items-price-checkbox(startingPrice=5, endingPrice=10)"></li>
+                            <li th:insert="fragments/items-fragments :: items-price-checkbox(startingPrice=20, endingPrice=30)"></li>
+                            <li th:insert="fragments/items-fragments :: items-price-checkbox(startingPrice=40, endingPrice=60)"></li>
+                            <li th:insert="fragments/items-fragments :: items-price-checkbox(startingPrice=60, endingPrice=100)"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </nav>
+        <div class="container mb-5">
+            <div class="container-fluid mt-5 ml-1">
+                <form action="/item/search" method="get" style="justify-content: center">
+                    <th:block th:replace="~{fragments/common-fragments :: search (
+                        options=(${ {
+                            { value: 'itemer', text: 'Subject' },
+                            { value: 'itemTitle', text: 'Item title' },
+                            { value: 'country', text: 'Country' }
+                        } })
+                    )}"/>
+                </form>
+            </div>
+            <div class="mt-4 ml-1">
+                <th:block th:replace="~{fragments/common-fragments :: pagination(class='mx-3')}"/>
+                <div class="container-fluid">
+                    <div class="row" th:fragment="list">
+                        <th:block th:if="${page.getContent().size() == 0}"
+                                  th:insert="~{fragments/common-fragments :: empty-result(text='items not found')}"/>
+                        <th:block th:unless="${page.getContent().size() == 0}" th:each="item : ${page.getContent()}">
+                            <th:block th:replace="fragments/items-fragments :: item-item(${item})"/>
+                        </th:block>
+                    </div>
+                </div>
+                <th:block th:if="${page.getContent().size() != 0}">
+                    <th:block th:replace="~{fragments/common-fragments :: pagination(class='mx-3')}"/>
+                </th:block>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:insert="~{fragments/common-fragments :: footer}"></footer>
+</body>
+</html>
